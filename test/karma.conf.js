@@ -17,14 +17,14 @@ module.exports = function(config) {
     files: [
       'test/test-main.js',
       { pattern: 'node_modules/jquery/dist/jquery.js', included: false },
-      { pattern: 'src/*.js', included: false },
+      { pattern: 'app/*.js', included: false },
       { pattern: 'test/**/*.spec.js', included: false }
     ],
 
 
     // list of files to exclude
     exclude: [
-      'src/main.js'
+      'app/main.js'
     ],
 
 
