@@ -1,0 +1,17 @@
+{
+  "name": "lab-karma-require-jasmine",
+  "version": "0.0.0",
+  "description": "A step-by-step lab for setting up a simple JavaScript centric web app using RequireJS, Karma and Jasmine",
+  "main": "index.html",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "angular": "^1.3.0",
+    "bootstrap": "^3.2.0",
+    "jquery": "^2.1.1",
+    "requirejs": "^2.1.14"
+  },
+  "devDependencies": {},
+  "appPath": "app"
+}

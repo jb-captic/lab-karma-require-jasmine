@@ -2,7 +2,7 @@ requirejs.config({
     urlArgs: 'bustCache=' + (new Date()).getTime(),
 
     paths: {
-        'jquery': '../node_modules/jquery/dist/jquery'
+        'jquery': '../bower_components/jquery/dist/jquery'
     },
 
     callback: function () {

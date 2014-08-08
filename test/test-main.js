@@ -2,7 +2,7 @@ var allTestFiles = [];
 var TEST_REGEXP = /(spec|test)\.js$/i;
  
 var pathToModule = function(path) {
-  var returnValue = path.replace(/^\/base\//, '').replace(/\.js$/, '');
+  var returnValue = path.replace(/^\/base\/app\//, '').replace(/\.js$/, '');
   return returnValue;
 };
  
@@ -20,7 +20,7 @@ require.config({
   baseUrl: '/base/app',
   
   paths: {
-    'jquery': '../node_modules/jquery/dist/jquery',
+    'jquery': '../bower_components/jquery/dist/jquery',
     'test' : '../test'
   },
  

@@ -16,15 +16,15 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'test/test-main.js',
-      { pattern: 'node_modules/jquery/dist/jquery.js', included: false },
-      { pattern: 'app/*.js', included: false },
-      { pattern: 'test/**/*.spec.js', included: false }
+      { pattern: 'bower_components/jquery/dist/jquery.js', included: false },
+      { pattern: 'app/**/*.js', included: false }
     ],
 
 
     // list of files to exclude
     exclude: [
-      'app/main.js'
+      'app/main.js',
+      'app/**/*_e2e-test.js'
     ],
 
 
