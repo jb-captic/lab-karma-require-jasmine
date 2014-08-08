@@ -1,16 +1,18 @@
-requirejs.config({
-    urlArgs: 'bustCache=' + (new Date()).getTime(),
+'use strict';
 
-    paths: {
-        'jquery': '../bower_components/jquery/dist/jquery'
-    },
+(function (require) {
+    require.config({
+        urlArgs: 'bustCache=' + (new Date()).getTime(),
 
-    callback: function () {
-        "use strict";
+        paths: {
+            'jquery': '../bower_components/jquery/dist/jquery'
+        },
 
-        require(["app"], function (App) {
-            var app = new App();
-            app.start();
-        });
-    }
-});
+        callback: function () {
+            require(["app"], function (App) {
+                var app = new App();
+                app.start();
+            });
+        }
+    });
+})(require);

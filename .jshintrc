@@ -23,8 +23,8 @@
   "boss"          : false,  // Tolerate assignments inside if, for & while. Usually conditions & loops are for comparison, not assignments.
   "debug"         : false,  // Allow debugger statements e.g. browser breakpoints.
   "eqnull"        : false,  // Tolerate use of `== null`.
-  "es5"           : true,   // Allow ECMAScript 5 syntax.
-  "esnext"        : false,  // Allow ES.next specific features such as const and let
+  "es3"           : false,  // Allow ECMAScript 3 syntax.
+  "esnext"        : true,   // Allow ES.next specific features such as const and let
   "evil"          : false,  // Tolerate use of `eval`.
   "expr"          : false,  // Tolerate `ExpressionStatement` as Programs.
   "funcscope"     : false,  // Tolerate declaring variables inside of control structures while accessing them later
@@ -57,6 +57,23 @@
   "prototypejs"   : false,  // Defines globals exposed by the Prototype
   "rhino"         : false,  // Defines globals exposed when running under Rhino
   "wsh"           : false,  // Defines globals exposed when running under WSH
+  "globals": {
+    "after": false,
+    "afterEach": false,
+    "angular": false,
+    "before": false,
+    "beforeEach": false,
+    "browser": false,
+    "define": false,
+    "describe": false,
+    "expect": false,
+    "element": false,
+    "inject": false,
+    "it": false,
+    "jasmine": false,
+    "require"       : false,
+    "spyOn": false
+  },
 
   // Legacy ////////////////////////////////////////////////////////////////////
 

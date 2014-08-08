@@ -1,4 +1,5 @@
 'use strict';
+
 (function() {
     describe('app', function () {
         it('Empty', function () {

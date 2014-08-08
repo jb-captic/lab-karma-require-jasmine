@@ -1,13 +1,17 @@
-define(["jquery"], function ($) {
-    "use strict";
+'use strict';
 
-    var App = function (target) {
-        this.target = target || $("body");
-    };
+(function(define){
 
-    App.prototype.start = function () {
-        this.target.html("App Started!");
-    };
+    define(["jquery"], function ($) {
 
-    return App;
-});
+        var App = function (target) {
+            this.target = target || $("body");
+        };
+
+        App.prototype.start = function () {
+            this.target.html("App Started!");
+        };
+
+        return App;
+    });
+})(define);

@@ -1,14 +1,18 @@
-define(['app', 'jquery'], function (App, $) {
+'use strict';
 
-    describe("when the app starts", function () {
-        it("outputs 'App Started!' in the target", function () {
-            var target = $("<div></div>");
+(function (define) {
+    
+    define(['app', 'jquery'], function (App, $) {
 
-            var app = new App(target);
-            app.start();
+        describe("when the app starts", function () {
+            it("outputs 'App Started!' in the target", function () {
+                var target = $("<div></div>");
 
-            expect(target.html()).toEqual("App Started!");
+                var app = new App(target);
+                app.start();
+
+                expect(target.html()).toEqual("App Started!");
+            });
         });
     });
-});
-
+})(define);
